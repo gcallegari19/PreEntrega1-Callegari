@@ -1,5 +1,5 @@
 import React from 'react';
-import CartWidget from './CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import Logo from "../assets/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
