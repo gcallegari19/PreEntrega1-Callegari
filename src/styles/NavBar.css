@@ -1,0 +1,20 @@
+.nav-item {
+    list-style: none;
+    padding: 10px 7px 2px 7px;
+    font-size: medium;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    display: inline-block;
+  }
+  
+  .navbar-nav li a {
+    color: black;
+    text-decoration: none;
+  }
+
+.nav-item a:hover {
+    color: #e7cfbc;
+}
+
+.imagen-logo {
+  width: 40px;
+}
