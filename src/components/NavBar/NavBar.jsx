@@ -1,9 +1,9 @@
 import React from 'react';
-import CartWidget from '../CartWidget/CartWidget';
-import Logo from "../assets/logo.png";
+import Logo from "../../assets/logo.png";
+import CartWidget from "../CartWidget/CartWidget"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import "../styles/NavBar.css"
+import "../../styles/NavBar.css"
 
 
 const NavBar = () => {
