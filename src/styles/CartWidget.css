@@ -1,8 +1,6 @@
-.cart-widget {
-    color: #e7cfbc;
-    font-size: 30px;
+.carritoBtn{
+    background-color: #e8dad7;
     cursor: pointer; 
-
 }
 
 .badge {

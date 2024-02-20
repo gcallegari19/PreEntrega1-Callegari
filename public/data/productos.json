@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "title": "Vaso Fernetero",
+        "price": 7000,
+        "stock": 5,
+        "img": "1.png",
+        "category": "fernetero"
+    },
+    {
+        "id": 2,
+        "title": "Vaso Tere",
+        "price": 5000,
+        "stock": 5,
+        "img": "2.png",
+        "category": "terere"
+    },
+    {
+        "id": 3,
+        "title": "Despojador de Joyas",
+        "price": 3500,
+        "stock": 5,
+        "img": "3.png",
+        "category": "deco"
+    },
+    {
+        "id": 4,
+        "title": "Matecito de Puntitos",
+        "price": 2500,
+        "stock": 5,
+        "img": "4.png",
+        "category": "mates"
+    },
+    {
+        "id": 5,
+        "title": "Gato de la fortuna",
+        "price": 10000,
+        "stock": 5,
+        "img": "5.png",
+        "category": "deco"
+    },
+    {
+        "id": 6,
+        "title": "Vaso Tere a Lunares",
+        "price": 5000,
+        "stock": 5,
+        "img": "6.png",
+        "category": "terere"
+    },
+    {
+        "id": 7,
+        "title": "Vaso Fernetero a Puntitos",
+        "price": 7000,
+        "stock": 5,
+        "img": "7.png",
+        "category": "fernetero"
+    },
+    {
+        "id": 8,
+        "title": "Matecito Print",
+        "price": 2500,
+        "stock": 5,
+        "img": "8.png",
+        "category": "mates"
+    },
+    {
+        "id": 9,
+        "title": "Vaso Fernetero Margaritas",
+        "price": 7000,
+        "stock": 5,
+        "img": "9.png",
+        "category":"fernetero"
+    },
+    {
+        "id": 10,
+        "title": "Matecito a Lunares",
+        "price": 2500,
+        "stock": 5,
+        "img": "10.png",
+        "category": "mates"
+    },
+    {
+        "id": 11,
+        "title": "Vaso Fernetero Print Rosa",
+        "price": 7000,
+        "stock": 5,
+        "img": "11.png",
+        "category":"fernetero"
+    },
+    {
+        "id": 12,
+        "title": "Gatito de la Fortuna",
+        "price": 3000,
+        "stock": 5,
+        "img": "12.png",
+        "category": "deco"
+    },
+    {
+        "id": 13,
+        "title": "Vaso Tere Orgullo",
+        "price": 5000,
+        "stock": 5,
+        "img": "13.png",
+        "category": "terere"
+    },
+    {
+        "id": 14,
+        "title": "Vaso Fernetero Ella Baila Sola",
+        "price": 7000,
+        "stock": 5,
+        "img": "14.png",
+        "category": "fernetero"
+    }
+]
