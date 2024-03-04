@@ -20,7 +20,7 @@ const ItemListContainer = ({ greeting }) => {
     }, [cid])
     return (
         <div className="max-w-screen-lg mx-auto">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
                 <ItemList products={products} />
             </div>
         </div>

@@ -1,19 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useCounter from '../Hooks/useCounter';
+import { GrClose } from "react-icons/gr";
+import { useCarritoContext } from '../context/CartContext';
 
 const ItemDetail = ({product}) => {
+    const { addItem } = useCarritoContext()
     const { count, increment, decrement, reset } = useCounter(1, product.stock, 1)
 
     const handleAddToCart = () => {
-        console.log("Producto agregado al carrito")
+        addItem(product, count)
     }
 
     return (
         <div>
             <div>
                 <Link to={'/'}>
-                <button className="absolute top-40 right-30 text-gray-700 hover:text-gray-900" >Cerrar</button>
+                <button className="bg-slate-50 absolute top-4 right-4 cursor-pointer0 text-gray-500 text-black px-2 py-2 rounded flex items-center hover:bg-gray-300"><GrClose /></button>
                 </Link>
                     <img className='w-full object-cover mb-6' src={`../img/${product.img}`} alt={`Imagen de ${product.title}`} />
                 </div>

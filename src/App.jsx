@@ -9,22 +9,25 @@ import ItemDetailsContainer from './components/ItemDetailsContainer';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import NotFound from './components/NotFound';
+import { CarritoProvider } from './context/CartContext';
 
 
 const App = () => {
   return (
     <>
       <BrowserRouter>  
-        <NavBar />
-          <Routes>          
-            <Route path='/' element={<ItemListContainer/>}></Route>
-            <Route path='/category/:cid' element={<ItemListContainer/>}></Route>
-            <Route path='/product/:pid' element={<ItemDetailsContainer/>}></Route>
-            <Route path='/cart' element={<Cart/>}></Route>
-            <Route path='/checkout' element={<Checkout/>}></Route>
-            <Route path='*' element={<NotFound/>}></Route>
-          </Routes>   
-        <Footer/>
+        <CarritoProvider>
+          <NavBar />
+            <Routes>          
+              <Route path='/' element={<ItemListContainer/>}></Route>
+              <Route path='/category/:cid' element={<ItemListContainer/>}></Route>
+              <Route path='/product/:pid' element={<ItemDetailsContainer/>}></Route>
+              <Route path='/cart' element={<Cart/>}></Route>
+              <Route path='/checkout' element={<Checkout/>}></Route>
+              <Route path='*' element={<NotFound/>}></Route>
+            </Routes>   
+          <Footer/>
+        </CarritoProvider>
       </BrowserRouter>
     </>
   );
