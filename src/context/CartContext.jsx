@@ -51,6 +51,13 @@ export const CarritoProvider = (props) => { //Forma de proveer el contexto, pued
         setCarrito([])
     }
 
+    const updateItem = (id, newQuantity) => {
+        const indice = carrito.findIndex(prod => prod.id === id)
+        const aux = carrito
+        aux[indice].quantity = newQuantity
+        setCarrito([...aux])
+    }
+
     //Obtener cantidad de productos
     const getItemQuantity = () => {
         return carrito.reduce((acum, prod) => acum += prod.quantity, 0)
@@ -63,7 +70,7 @@ export const CarritoProvider = (props) => { //Forma de proveer el contexto, pued
 
     console.log(carrito)
     return (
-        <CarritoContext.Provider value={{ carrito, addItem, removeItem, emptyCart, getItemQuantity, totalPrice }}>
+        <CarritoContext.Provider value={{ carrito, addItem, removeItem, updateItem, emptyCart, getItemQuantity, totalPrice }}>
             {props.children}
 
         </CarritoContext.Provider>
