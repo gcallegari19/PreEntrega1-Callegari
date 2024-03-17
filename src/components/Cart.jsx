@@ -11,18 +11,20 @@ const Cart = () => {
             {
                 carrito.length === 0 ?
                     <>
-                        <h1>Carrito Vacio</h1>
-                        <button className="bg-[#de9d89] text-white px-3 py-1 rounded" >
+                    <div className='space-y-1'>
+                        <h1 className='pl-2'>Carrito Vacio</h1>
+                        <button className="bg-[#de9d89] text-white px-3 py-1 rounded ml-2" >
                             <Link to={'/'}>
                                 Volver al inicio
                             </Link>
                         </button>
+                        </div>
                     </>
                     :
                     <div>
                         {<ItemList products={carrito} plantilla="ItemCart" />}
-                        <div className='space-x-2'>
-                            <p>Resumen de la compra: $ {totalPrice()}</p>
+                        <div className='space-x-2 space-y-1'>
+                            <p className='pl-2'>Resumen de la compra: $ {totalPrice()}</p>
                             <button className="bg-[#de9d89] text-white px-3 py-1 rounded" onClick={emptyCart}>
                                 Vaciar Carrito
                             </button>

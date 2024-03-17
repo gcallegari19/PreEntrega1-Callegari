@@ -17,7 +17,7 @@ const ItemDetailsContainer = () => {
     }, [])
   
     return (
-      <div className="max-w-xl mx-auto bg-[#F2E8E0] p-3 rounded-md shadow-md my-5 container-details space-x-4">
+      <div className="max-w-xs bg-[#F2E8E0] p-3 rounded-md shadow-md my-5 container-details space-x-4">
           <ItemDetail product={product}></ItemDetail>
       </div>
   

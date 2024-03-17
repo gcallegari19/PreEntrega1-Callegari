@@ -10,16 +10,17 @@ const NavBar = () => {
     return (
         <>
     
-    <nav className="navbar navbar-expand-lg navbar-light p-4">
-            <div className="container d-flex justify-content-between align-items-center container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light p-2">
+   
+            <div className="container d-flex justify-content-between align-items-center">
                 <Link to="/" className="navbar-brand d-flex align-items-center">
                     <img className="imagen-logo" src={Logo} alt="Logo" />
                     <span className="ml-2">O F R E N D A</span>
-                </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </Link>               
+                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="navbar-light" aria-controls="navbar-light" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="navbar-collapse" id="navbarSupportedContent">
+                </button>       
+                <div className="navbar-collapse" id="navbar-light">
                     <ul className="navbar-nav ms-auto mb-2 mb-xl-0">
                         <li className="nav-item">
                             <Link to={'/'}>
@@ -53,10 +54,7 @@ const NavBar = () => {
                     </ul>
                 </div>
             </div>
-        </nav>
-    
-
-       
+        </nav>       
     </>
     
     );

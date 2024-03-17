@@ -1,3 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  list-style: none;
+  display: inline-block;
+}
+
 .navbar-nav{
   display: flex;
   justify-content: flex-end;
@@ -15,7 +29,7 @@
   width: 40px;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1200px) {
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
